@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 21px;
+}
+
+html {
+  width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  background: #0f094b;
+  /*background: linear-gradient(180deg, rgba(15, 9, 75, 1) 0%, rgba(0, 0, 0, 1) 100%);*/
+}
+
+body {
+  width: 100vw;
+}
+
+nav.navbar {
+  position: relative;
+  width: 100vw;
+  min-height: 7vw;
+}
+
+nav.navbar img {
+  display: inline-block;
+  margin-left: 1rem;
+  width: 4.7rem;
+}
+
+nav.navbar ul {
+  position: relative;
+  float: right;
+  margin-right: 1rem;
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+nav.navbar ul li {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem 1.2rem;
+  font-size: 2em;
+}
+
+nav.navbar ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+div.slider {
+  width: 100vw;
+  height: 70vh;
+  background-color: #333;
+}
+
+div.lineaBlancaCorte {
+  position: relative;
+  width: 100vw;
+  height: 30vh;
+  background-color: transparent;
+}
+
+div.lineaBlancaCorte img {
+  display: inline-block;
+  position: absolute;
+  width: 15rem;
+  top: 2rem;
+  z-index: 100;
+  overflow: visible;
+}
+
+div.lineaBlancaCorte .imagen-1 {
+  left: -2em;
+  top: 0;
+}
+
+div.lineaBlancaCorte .imagen-2 {
+  top: -2.7rem;
+  right: 10rem;
+}
+
+div.mainServicios {
+  width: 100vw;
+  padding: 2.5rem 0;
+}
+
+div.mainServicios h2 {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 2.5em;
+  margin-bottom: 2rem;
+}
+
+div.mainServicios h2 {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  position: relative;
+}
+
+@-webkit-keyframes textoDisplay {
+  0% {
+    font-size: 0em;
+    color: transparent;
+    top: 100px;
+    z-index: -1;
+  }
+  100% {
+    font-size: 2.5em;
+    color: #07032E;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+@keyframes textoDisplay {
+  0% {
+    font-size: 0em;
+    color: transparent;
+    top: 100px;
+    z-index: -1;
+  }
+  100% {
+    font-size: 2.5em;
+    color: #07032E;
+    top: 0;
+    z-index: 0;
+  }
+}
+
+div.servicios-1 {
+  position: relative;
+  background-color: #FFF;
+  color: #0F094B;
+}
+
+div.servicios-1 h2 {
+  color: #0F094B;
+}
+
+div.servicios-1 .servicios .servicioWrapper span {
+  color: #07032E;
+}
+
+div.servicios-1::before {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  width: 100%;
+  height: 75%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transform: skewY(-4.9deg);
+          transform: skewY(-4.9deg);
+}
+
+div.servicios-1::after {
+  position: absolute;
+  content: "";
+  background-color: inherit;
+  width: 100%;
+  height: 75%;
+  left: 0;
+  right: 0;
+  bottom: -5rem;
+  z-index: -10;
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transform: skewY(4.9deg);
+          transform: skewY(4.9deg);
+}
+
+div.servicios-2 {
+  position: relative;
+  background-color: #0F094B;
+  color: #FFF;
+  padding-bottom: 3.5rem;
+}
+
+div.servicios-2 h2 {
+  color: #FFF;
+}
+
+div.servicios-2 .servicios .servicioWrapper span {
+  color: #FFF;
+}
+
+div.servicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 94vw;
+  margin: auto 3vw;
+}
+
+div.servicios .servicioWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+div.servicios .servicioWrapper .servicioVertical {
+  height: 14.5rem;
+}
+
+div.servicios .servicioWrapper span {
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.marcasWrapper {
+  background-color: #FFF;
+}
+
+.marcasWrapper h2 {
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  padding: 0.7rem;
+  font-size: 2.5em;
+  color: #07032E;
+}
+
+.pantalla {
+  background-image: url("../img/pantalla.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 100vw;
+  height: 100%;
+  padding-bottom: 5rem;
+}
+
+.pantalla h3 {
+  color: #07032E;
+  text-decoration: underline;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+}
+
+.pantalla h3:first-of-type {
+  padding-top: 3em;
+}
+
+.pantalla .rowMarcas {
+  width: 58vw;
+  margin: auto;
+  text-align: center;
+}
+
+.pantalla .rowMarcas img {
+  display: inline-block;
+  width: 11rem;
+}
+
+.pantalla .rowMarcas:last-of-type {
+  padding-bottom: 4rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  position: relative;
+}
+
+footer .informacionWrapper {
+  display: inline-block;
+  width: 30vw;
+  padding: 1rem 1.5rem;
+  text-align: justify;
+}
+
+footer .redesWrapper {
+  position: relative;
+  float: right;
+  margin: 1.3rem 1rem;
+}
+
+footer .redesWrapper img {
+  display: inline-block;
+  margin: auto .5rem;
+  background-color: #fff;
+}
+
+/* FORMULARIO.HTML */
+.formularioWrapper {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(51, 51, 51, 0.3);
+}
+
+.formulario {
+  width: 45vw;
+}
+
+.formulario form {
+  width: 100%;
+  height: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.formulario form input {
+  margin: 0.5em 0.5em;
+  width: 10em;
+}
+
+.formulario form textarea {
+  width: 90%;
+  margin-left: 0.5em;
+  resize: none;
+}
+
+.formulario form input[type=submit] {
+  background-color: #07032E;
+  color: #FFF;
+  border-radius: 3em;
+  border: 1px solid #FFF;
+  padding: 0.7em 2em;
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: lighter;
+  width: 75%;
+}
+
+.informacion {
+  width: 45vw;
+  text-align: center;
+}
+
+.informacion p {
+  color: #FFF;
+  text-align: justify;
+  margin: 1em 0;
+}
+
+.informacion img {
+  display: inline-block;
+  margin-bottom: 1em;
+}
+/*# sourceMappingURL=ideesp.css.map */
